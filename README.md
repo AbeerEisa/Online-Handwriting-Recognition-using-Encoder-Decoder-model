@@ -46,9 +46,11 @@ A normalizing function was applied to the X and Y points to adjust the values me
         combined=[]
         combined= list(zip(x_list , y_list))
 ```
+![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/pre.PNG)
 
 #### Segmentation 
 The input text was divided into lines with maximum lenght of 2000.
+![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/pre2.PNG)
 
 #### Feature Extraction
 
@@ -193,6 +195,7 @@ layer.
 
 Each p(yi|jc, y1, ... yi−1) distribution in the equation is represented with a softmax
 layer over all the letters in the alphabet.
+![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/encdec.PNG)
 
 ### Attention
 Before Attention mechanism, the recognition relied on reading input sequence of a line
@@ -217,13 +220,20 @@ layer to predict the probability of the next letter in the sequence.
 Accuracy of the system is 96.036.
 
 Label: [’A’ ’c’ ’k’ ’n’ ’o’ ’w’ ’l’ ’e’ ’d’ ’g’ ’m’ ’e’ ’n’ ’t’ ’s’ ’.’ ” ’A’ ” ’g’ ’r’ ’a’ ’p’ ’h’ ’i’ ’c’ ’a’ ’l’]
+![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/g2.PNG)
+
 Actual output: [’A’ ’c’ ’k’ ’n’ ’o’ ’w’ ’l’ ’e’ ’d’ ’n’ ’m’ ’e’ ’n’ ’t’ ’s’ ’.’ ” ’I’ ” ’g’ ’r’ ’a’
 ’p’ ’h’ ’i’ ’c’ ’a’ ’l’]
 
+
 Label: [’B’ ’o’ ’a’ ’r’ ’d’ ’?’ ’"’ ” ’"’ ’Y’ ’e’ ’s’ ’,’ ” ’s’ ’i’ ’r’ ’.’ ’"’]
+![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/g3.PNG)
+
 Actual output: [’B’ ’o’ ’a’ ’r’ ’d’ ’,’ ’"’ ” ’"’ ’W’ ’e’ ’s’ ’,’ ” ’s’ ’i’ ’r’ ’.’ ’"’]
 
 Label: [’p’ ’o’ ’i’ ’n’ ’t’ ” ’a’ ’t’ ” ’w’ ’h’ ’i’ ’c’ ’h’ ” ’h’ ’e’ ” ’s’ ’w’ ’e’ ’r’ ’v’ ’e’ ’s’]
+![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/g4.PNG)
+
 Actual output: [’p’ ’o’ ’i’ ’n’ ’t’ ” ’a’ ’t’ ” ’w’ ’h’ ’i’ ’c’ ’h’ ” ’h’ ’e’ ” ’s’ ’w’ ’e’ ’r’ ’v’
 ’e’ ’s’]
 
