@@ -220,6 +220,7 @@ hidden states to provide a context vector to be used in the decoder. Finally, th
 vector and the target decoder are concatenated together and passed through a softmax
 layer to predict the probability of the next letter in the sequence.
 
+![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/att.PNG)
 
 ## Results
 Accuracy of the system is 96.036.
