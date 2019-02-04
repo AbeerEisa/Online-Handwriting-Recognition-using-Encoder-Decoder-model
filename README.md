@@ -21,8 +21,7 @@ xml-format, including the writer-id, the transcription and the setting of the re
 ### Input Data
 
 #### Preprocessing
-A normalizing function was applied to the X and Y points to adjust the values measured on different scales to a notionally common scale. This process is done for each file
-individually so that the sequences will fit into a [0,1] [0,1] bounding box without affecting the original aspect ratio.
+A normalizing function was applied to the X and Y points to adjust the values measured on different scales to a notionally common scale. This process is done for each file individually so that the sequences will fit into a [0,1] [0,1] bounding box without affecting the original aspect ratio.
 
 ```
         x_elts = [x[0] for x in strokes]
@@ -201,8 +200,10 @@ and compressing all information into a fixed-length vector ( the context vector)
 if the input sequence is too long, it leads to information loss therefore low recognition
 accuracies.. This can be imagined as a sentence with hundreds of words represented by
 only several words.
+
 However, attention partially fixes this problem by allowing the model to look over
 all the information the input holds, and then focus on specific parts of the input sequence.
+
 Instead of the hidden state being obtain from only the last hidden layer in the
 encoder, a hidden state for each input time-step is gathered from the encoder, it is then
 scored and normalized using a softmax function to be a probability over the encoder
@@ -215,7 +216,7 @@ layer to predict the probability of the next letter in the sequence.
 ## Results
 Accuracy of the system is 96.036.
 
-Label: [’A’ ’c’ ’k’ ’n’ ’o’ ’w’ ’l’ ’e’ ’d’ ’g’ ’m’ ’e’ ’n’ ’t’ ’s’ ’.’ ” ’A’ ” ’g’ ’r’ ’a’ ’p’ ’h’ ’i’ ’c’ ’a’ ’l’] 
+Label: [’A’ ’c’ ’k’ ’n’ ’o’ ’w’ ’l’ ’e’ ’d’ ’g’ ’m’ ’e’ ’n’ ’t’ ’s’ ’.’ ” ’A’ ” ’g’ ’r’ ’a’ ’p’ ’h’ ’i’ ’c’ ’a’ ’l’]
 Actual output: [’A’ ’c’ ’k’ ’n’ ’o’ ’w’ ’l’ ’e’ ’d’ ’n’ ’m’ ’e’ ’n’ ’t’ ’s’ ’.’ ” ’I’ ” ’g’ ’r’ ’a’
 ’p’ ’h’ ’i’ ’c’ ’a’ ’l’]
 
