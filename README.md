@@ -183,17 +183,17 @@ The system is comprised of two sub-models, as the name suggests: Encoder: to
 encode the source sequence, and Decoder: to decode the encoded source sequence into
 the target sequence
 
-The model estimates the conditional probability p(y1; :::; yijx1; :::; xj), where (x1; :::; xj)
-is an input sequence and y1; :::; yi is its corresponding output sequence whose length i
+The model estimates the conditional probability p(y1, ... ,yi|x1, ... ,xj), where (x1, ... , xj)
+is an input sequence and y1, ..., yi is its corresponding output sequence whose length i
 may differ from j.
 
 Encoder: An LSTM layer is used as the encoder, its goal is to step through the input
 time steps and encode the entire sequence into fixed length vector representation v of
-the input sequence (x1; :::; xj). This vector representation is called the context vector(c)
+the input sequence (x1, ..., xj). This vector representation is called the context vector(c)
 and is obtained from the last hidden layer of the encoder LSTM as shown in the figure.
 
 Decoder: Another LSTM layer is used as the decoder and is responsible for stepping
-through the output time steps and computing the probability of (y1; :::; yi) while reading
+through the output time steps and computing the probability of (y1, ..., yi) while reading
 from the context vector. The context vector is set as the initial hidden state of the LSTM
 layer.
 
@@ -229,7 +229,7 @@ Label: [’A’ ’c’ ’k’ ’n’ ’o’ ’w’ ’l’ ’e’ ’d’ 
 
 ![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/g2.PNG)
 
-Actual output: [’A’ ’c’ ’k’ ’n’ ’o’ ’w’ ’l’ ’e’ ’d’ ’n’ ’m’ ’e’ ’n’ ’t’ ’s’ ’.’ ” ’I’ ” ’g’ ’r’ ’a’
+Recognized output: [’A’ ’c’ ’k’ ’n’ ’o’ ’w’ ’l’ ’e’ ’d’ ’n’ ’m’ ’e’ ’n’ ’t’ ’s’ ’.’ ” ’I’ ” ’g’ ’r’ ’a’
 ’p’ ’h’ ’i’ ’c’ ’a’ ’l’]
 
 
@@ -238,7 +238,7 @@ Label: [’B’ ’o’ ’a’ ’r’ ’d’ ’?’ ’"’ ” ’"’ ’Y
 
 ![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/g3.PNG)
 
-Actual output: [’B’ ’o’ ’a’ ’r’ ’d’ ’,’ ’"’ ” ’"’ ’W’ ’e’ ’s’ ’,’ ” ’s’ ’i’ ’r’ ’.’ ’"’]
+Recognized output: [’B’ ’o’ ’a’ ’r’ ’d’ ’,’ ’"’ ” ’"’ ’W’ ’e’ ’s’ ’,’ ” ’s’ ’i’ ’r’ ’.’ ’"’]
 
 
 #### example 3
@@ -246,7 +246,7 @@ Label: [’p’ ’o’ ’i’ ’n’ ’t’ ” ’a’ ’t’ ” ’w’ 
 
 ![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/g4.PNG)
 
-Actual output: [’p’ ’o’ ’i’ ’n’ ’t’ ” ’a’ ’t’ ” ’w’ ’h’ ’i’ ’c’ ’h’ ” ’h’ ’e’ ” ’s’ ’w’ ’e’ ’r’ ’v’
+Recognized output: [’p’ ’o’ ’i’ ’n’ ’t’ ” ’a’ ’t’ ” ’w’ ’h’ ’i’ ’c’ ’h’ ” ’h’ ’e’ ” ’s’ ’w’ ’e’ ’r’ ’v’
 ’e’ ’s’]
 
 ## References
