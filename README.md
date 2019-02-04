@@ -254,5 +254,5 @@ Recognized output: [’p’ ’o’ ’i’ ’n’ ’t’ ” ’a’ ’t’ 
 ["A ten-minute introduction to sequence-to-sequence learning in Keras"](https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html) by François Chollet.
 
 ## Authors
-
-
+* [Abeer Eisa](https://github.com/AbeerEisa)
+* [Lina Abdelkarim]()
