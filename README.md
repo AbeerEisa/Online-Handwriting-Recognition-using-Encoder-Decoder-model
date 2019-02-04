@@ -19,7 +19,7 @@ xml-format, including the writer-id, the transcription and the setting of the re
 ## Data Preparation
 
 ### Input Data
-
+![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/inputdata.jpg)
 #### Preprocessing
 A normalizing function was applied to the X and Y points to adjust the values measured on different scales to a notionally common scale. This process is done for each file individually so that the sequences will fit into a [0,1] [0,1] bounding box without affecting the original aspect ratio.
 
