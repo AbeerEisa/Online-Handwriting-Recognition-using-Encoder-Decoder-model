@@ -224,6 +224,7 @@ layer to predict the probability of the next letter in the sequence.
 ## Results
 Accuracy of the system is 96.036.
 
+#### example 1
 Label: [’A’ ’c’ ’k’ ’n’ ’o’ ’w’ ’l’ ’e’ ’d’ ’g’ ’m’ ’e’ ’n’ ’t’ ’s’ ’.’ ” ’A’ ” ’g’ ’r’ ’a’ ’p’ ’h’ ’i’ ’c’ ’a’ ’l’]
 
 ![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/g2.PNG)
@@ -232,7 +233,7 @@ Actual output: [’A’ ’c’ ’k’ ’n’ ’o’ ’w’ ’l’ ’e’ 
 ’p’ ’h’ ’i’ ’c’ ’a’ ’l’]
 
 
-
+#### example 2
 Label: [’B’ ’o’ ’a’ ’r’ ’d’ ’?’ ’"’ ” ’"’ ’Y’ ’e’ ’s’ ’,’ ” ’s’ ’i’ ’r’ ’.’ ’"’]
 
 ![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/g3.PNG)
@@ -240,12 +241,10 @@ Label: [’B’ ’o’ ’a’ ’r’ ’d’ ’?’ ’"’ ” ’"’ ’Y
 Actual output: [’B’ ’o’ ’a’ ’r’ ’d’ ’,’ ’"’ ” ’"’ ’W’ ’e’ ’s’ ’,’ ” ’s’ ’i’ ’r’ ’.’ ’"’]
 
 
-
+#### example 3
 Label: [’p’ ’o’ ’i’ ’n’ ’t’ ” ’a’ ’t’ ” ’w’ ’h’ ’i’ ’c’ ’h’ ” ’h’ ’e’ ” ’s’ ’w’ ’e’ ’r’ ’v’ ’e’ ’s’]
 
 ![alt text](https://github.com/AbeerEisa/Online-Handwriting-Recognition-using-Encoder-Decoder-model/blob/master/images/g4.PNG)
-
-
 
 Actual output: [’p’ ’o’ ’i’ ’n’ ’t’ ” ’a’ ’t’ ” ’w’ ’h’ ’i’ ’c’ ’h’ ” ’h’ ’e’ ” ’s’ ’w’ ’e’ ’r’ ’v’
 ’e’ ’s’]
